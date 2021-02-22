@@ -4,27 +4,39 @@
         <title>Forms</title>
     </head>
     <body>
+        <!--This form is used to ship a purchase to a customer.
+        The functionalities of this webpage include:
+        Text input for the users address, postal code and city,
+        Drop-down input for the user to select shipping type,
+        Radio button input for the user to select payment type,
+        Text input for the user to enter comments,
+        Checkbox input for the user to allow e-mail updates and to save payment information-->
         <h1>Forms</h1>
         <form method="get">
-            
-            <label for="address">Address:</label>
+
+            <!--Text input for the user's address-->
+            <label for="address"><b>Address:</b></label>
             <input type = "text" name = "address" placeholder="Please Enter Your Address"
             size = "30" maxlength="50" id = "address">
             <br/>
             <br/>
 
-            <label for="postalcode">Postal Code:</label>
+            <!--Text input for the user's postal code-->
+            <label for="postalcode"><b>Postal Code:</b></label>
             <input type = "text" name = "postalcode" placeholder="Please Enter Your Postal Code"
             size = "30" maxlength="20" id = "postalcode">
             <br/>
             <br/>
 
-            <label for="city">City:</label>
+            <!--Text input for the user's city-->
+            <label for="city"><b>City:</b></label>
             <input type = "text" name = "city" placeholder="Please Enter Your City"
             size = "30" maxlength="30" id = "city">
             <br/>
             <br/>
 
+            <!--Drop down used to select the shipping type.
+            Options: Standard Shipping, One-Day Shipping and Two-Day Shipping-->
             <label for="shipping">Choose Shipping Type</label>
             <select name="shipping" id="shipping">
                 <option value = "StandardShipping">Standard Shipping</option>
@@ -34,25 +46,30 @@
             <br/>
             <br/>
 
-            Select a payment type <br/>
-            <label><input type="radio" name="payment" value="PayPal" checked>PayPal</label> <br/>
-            <label><input type="radio" name="payment" value="Debit">Debit</label> <br/>
-            <label><input type="radio" name="payment" value="Credit">Credit</label>
+            <!--Radio buttons used to select the payment type.
+            Options: PayPal, Debit and Credit-->
+            <u>Select a payment type</u> 
+            <br/>
+            <label><input type="radio" name="payment" value="PayPal" checked><i>PayPal</i></label> <br/>
+            <label><input type="radio" name="payment" value="Debit"><i>Debit</i></label> <br/>
+            <label><input type="radio" name="payment" value="Credit"><i>Credit</i></label>
             <br/>
             <br/>
 
+            <!--Comment box-->
             <label for="Comments">Comments</label> <br/>
             <textarea id="Comments" name="Comments" rows="4" cols="40"></textarea>
             <br/>
             <br/>
 
+            <!--Check boxes used to allow e-mail updates and to save payment information-->
             <label><input type="checkbox" name="emailUpdates" checked>Sign Me Up For Email Updates</label>
             <br/>
-
             <label><input type="checkbox" name="paymentInfo" checked>Save My Payment Information</label>
             <br/>    
             <br/>
 
+            <!--Submit button-->
             <input type="submit">
         </form>
     </body>
